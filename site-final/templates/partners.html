@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="ru">
+        <meta charset="utf-8">
+        <title>Кофейня - Для партнёров</title>
+        <link rel="stylesheet" href="../static/partners.css">
+        <style>
+            .big_picture { background-image: url("{{ url_for('static',filename='images/galery3.png') }}") }
+        </style>
+    </head>
+    <body>
+        <div class="main_window">
+            <div class="top_panel">
+                <a href="/" class="logo_ref"><img src="../static/images/logo.png" alt="logo" class="logo"></a>
+                <a href="/menu" class="top_panel_button" id="menu">Меню</a>
+                <a href="/sale" class="top_panel_button" id="sale">Акции</a>
+                <a href="/comments" class="top_panel_button" id="comments">Отзывы</a>
+                <a href="/vacancy" class="top_panel_button" id="vacancy">Вакансии</a>
+                <a href="/partners" class="top_panel_button" id="partners">Для партнёров</a>
+            </div>
+            <div class="big_picture">
+                <div class="white_rect">
+                    <p class="wr_h">Для партнёров</p>
+                    <hr style="border: 1px solid #000000; background-color: #000000; width: 90%; margin-top: 3px;">
+                    <div class="wr_text">
+                        <p>Откройте свою кофейню уже сегодня!<br><br> Зарабатывайте от 150 тысяч рублей в месяц на самом популярном напитке.<br> Начните действовать прямо сейчас!<br><br> Свяжитесь с нами для более подробной информации coffe_house@mail.ru.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="temp"></div>
+            <div class="brown_rect">
+                <p class="br_h">Почему именно мы?</p>
+                <ol class="br_text">
+                    <li>Мы разработаем стильный и функциональный интерьер с учетом особенностей помещения, в котором будет удобно работать персоналу и приятно находиться гостям.</li>
+                    <li>Крутые акции, социально значимые и небанальные проекты - все это регулярно привлекает новых гостей, увеличивает средний чек и повышает узнаваемость бренда.</li>
+                    <li>Благодаря отлаженной системе логистики, вся продукция и все необходимое для работы пекарни все будет поступать в срок.</li>
+                    <li>Вся продукция уникальна, так как это полностью наше производство. А регулярные опросы и отзывы наших многочисленных гостей помогают нам контролировать качество и пробовать новинки.</li>
+                </ol>
+            </div>
+            <div class="temp"></div>
+            <footer>
+                <p class="footer_h">Контакты</p>
+                <div class="contacts">
+                    <div class="contacts_left">
+                        <div class="contacts_1">
+                            <img src="../static/images/vk.png" alt="" class="con_img">
+                            <p class="con_text">vk.com/coffe_house</p>
+                        </div>
+                        <div class="contacts_1">
+                            <img src="../static/images/telegram.png" alt="" class="con_img">
+                            <p class="con_text">@coffe_house</p>
+                        </div>
+                    </div>
+                    <div class="contacts_right">
+                        <div class="contacts_1">
+                            <img src="../static/images/email.png" alt="" class="con_img">
+                            <p class="con_text">coffe_house@mail.ru</p>
+                        </div>
+                        <div class="contacts_1">
+                            <img src="../static/images/number.png" alt="" class="con_img">
+                            <p class="con_text">8-(846)-12-56-89</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

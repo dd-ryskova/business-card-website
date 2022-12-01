@@ -1,0 +1,298 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #1E1E1E;
+}
+
+.main_window {
+    position: relative;
+    height: 4500px;
+    width: 1920px;
+    left: calc(50% - 1920px/2);
+
+    background-color: white;
+}
+
+.temp {
+    position: relative;
+    width: inherit;
+    height: 100px;
+    background-color: white;
+}
+
+.logo {
+    position: relative;
+    width: 158px;
+    height: 30px;
+}
+
+.logo_ref {
+    position: relative;
+    top: 20px;
+    left: calc(158px/2);
+
+    width: 158px;
+    height: 30px;
+}
+
+.top_panel {
+    position: fixed;
+    width: inherit;
+    height: 70px;
+    left: inherit;
+    top: 0px;
+    display: flex;
+
+    background-image: url(top_panel.png);
+
+    z-index: 9999999;
+}
+
+.top_panel_button {
+    position: relative;
+    top: 35%;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+
+    line-height: 27px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+#menu {
+    position: relative;
+    left: 55%;
+}
+
+#sale {
+    position: relative;
+    left: 58%;
+}
+
+#comments {
+    position: relative;
+    left: 61%;
+}
+
+#vacancy {
+    position: relative;
+    left: 64%;
+}
+
+#partners {
+    position: relative;
+    left: 67%;
+}
+
+.menu_h {
+    position: relative;
+}
+
+.menu_h_text {
+    position: relative;
+    padding-left: 100px;
+    margin: 0;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 47px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.menu_choice {
+    position: relative;
+    left: calc(50% - 550px/2);
+    width: 550px;
+}
+
+.mc_text {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+
+    text-decoration-line: none;
+
+    color: #010101;
+}
+
+.mc_text:visited {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+
+    text-decoration-line: none;
+
+    color: #010101;
+}
+
+.menu_positions {
+    position: relative;
+}
+
+.cad_h {
+    padding-left: 100px;
+
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #774E22;
+}
+
+.cad_table {
+    padding-left: 100px;
+}
+
+.cad_cell {
+    width: 306px;
+    height: 404px;
+
+    border: 1px solid #b0b3b4;
+    padding: 5px;
+    background-color: #FFFFFF;
+}
+
+.cad_sell_img {
+    position: relative;
+    left: calc(50% - 220px/2);
+
+    width: 220px;
+    height: 220px;
+}
+
+.cad_sell_img_text {
+    position: relative;
+    top: 30px;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    /* identical to box height, or 28px */
+
+    text-align: center;
+
+    /* black */
+
+    color: #333333;
+}
+
+.cad_cell_price_bg {
+    position: relative;
+    left: calc(25% - 42px/2);
+    bottom: -60px;
+
+    width: 113px;
+    height: 42px;
+
+    /* accent */
+
+    background: #B59571;
+}
+
+.cad_sell_img_price {
+    position: relative;
+    top: 5px;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    /* identical to box height, or 31px */
+
+    text-align: center;
+
+    /* white */
+
+    color: #FFFFFF;
+}
+
+
+
+
+footer {
+    position: relative;
+    height: 400px;
+    width: inherit;
+    display: flex;
+
+    background-color: #1E1E1E;
+}
+
+.footer_h {
+    position: relative;
+    padding-left: 200px;
+    padding-top: 100px;
+    margin: 0;
+
+    font-family: 'Cormorant Garamond';
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-align: left;
+
+    color: #FFFFFF;
+}
+
+.contacts {
+    position: relative;
+    padding-left: 900px;
+    padding-top: 100px;
+
+    display: flex;
+}
+
+.contacts_left {
+    position: relative;
+    margin: 10px;
+}
+
+.contacts_right {
+    position: relative;
+    margin: 10px;
+}
+
+.contacts_1 {
+    display: flex;
+}
+
+.con_img {
+    width: 20px;
+    height: 18px;
+    margin: 10px;
+}
+
+.con_text {
+    margin: 0;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 40px;
+    /* identical to box height, or 182% */
+
+    font-feature-settings: 'tnum' on, 'lnum' on;
+
+    color: #FFFFFF;
+}

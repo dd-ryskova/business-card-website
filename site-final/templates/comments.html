@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <head>
+        <meta lang="ru">
+        <meta charset="utf-8">
+        <title>Кофейня - Отзывы</title>
+        <link rel="stylesheet" href="../static/comments.css">
+        <style>
+            .comm { background-image: url("{{ url_for('static',filename='images/menu_top_panel.png') }}") }
+            .top_panel { background-image: url("{{ url_for('static',filename='images/top_panel.png') }}") }
+            @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Playfair+Display&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Playfair+Display:wght@400;500&display=swap');
+        </style>
+    </head>
+</head>
+<body>
+    <div class="main_window">
+        <div class="top_panel">
+            <a href="/" class="logo_ref"><img src="../static/images/logo.png" alt="logo" class="logo"></a>
+            <a href="/menu" class="top_panel_button" id="menu">Меню</a>
+            <a href="/sale" class="top_panel_button" id="sale">Акции</a>
+            <a href="/comments" class="top_panel_button" id="comments">Отзывы</a>
+            <a href="/vacancy" class="top_panel_button" id="vacancy">Вакансии</a>
+            <a href="/partners" class="top_panel_button" id="partners">Для партнёров</a>
+        </div>
+        <div class="temp"></div>
+        <form method="post">
+            <h1 class="form_text_h">Оставить отзыв</h1>
+            <h2 class="form_text">Как вас зовут?</h2>
+            <input type="text" name="name" class="input_1" maxlength="50">
+            <h2 class="form_text">Любые комментарии и пожелания</h2>
+            <input type="text" name="text" class="input_2" maxlength="300">
+            <button type="submit" class="form_button">Отправить</button>
+            {% for msg in get_flashed_messages() %}
+                <p class="flash">{{ msg }}</p>
+            {% endfor %}
+        </form>
+        <div class="temp"></div>
+        <div class="comms_section">
+            {% for comm in comms %}
+                <div class="comm">
+                    <figure class="comm_fig">
+                        <p class="comm_text">{{ comm.comment_text }}</p>
+                        <div class="comm_user">
+                            <img src="../static/images/userpic.png" alt="" class="comm_user_pic">
+                            <p class="comm_user_name">{{ comm.commentator_name }}</p>
+                        </div>
+                    </figure>
+                </div>
+                <div class="temp"></div>
+            {% endfor %}
+        </div>
+        <div class="temp"></div>
+    </div>
+</body>
+</html>

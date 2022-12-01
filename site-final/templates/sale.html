@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="ru">
+        <meta charset="utf-8">
+        <title>Кофейня - Акции</title>
+        <link rel="stylesheet" href="../static/sale.css">
+        <style>
+            .top_panel { background-image: url("{{ url_for('static',filename='images/top_panel.png') }}") }
+            @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Playfair+Display&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Playfair+Display:wght@400;500&display=swap');
+        </style>
+    </head>
+    <body>
+        <div class="main_window">
+            <div class="top_panel">
+                <a href="/" class="logo_ref"><img src="../static/images/logo.png" alt="logo" class="logo"></a>
+                <a href="/menu" class="top_panel_button" id="menu">Меню</a>
+                <a href="/sale" class="top_panel_button" id="sale">Акции</a>
+                <a href="/comments" class="top_panel_button" id="comments">Отзывы</a>
+                <a href="/vacancy" class="top_panel_button" id="vacancy">Вакансии</a>
+                <a href="/partners" class="top_panel_button" id="partners">Для партнёров</a>
+            </div>
+            <div class="temp"></div>
+            <h1 class="sale_h_text">Акции</h1>
+            <hr style="border: 2px solid #000000; background-color: #000000; width: 90%;">
+
+            <div class="sale_text_container">
+                <h2 class="sale_text_h">В свою чашку</h2>
+                <p class="sale_text">Вводим эко-инициативу «напитки в свою чашку». Воспользоваться инициативой очень легко! Нужно просто сказать на кассе бариста о<br>том, что желаешь напиток в свою чашку. Ну и конечно, передать саму чашку.</p>
+                <h2 class="sale_text_h">Добрый кофе</h2>
+                <p class="sale_text">10 рублей с продажи каждого кофе будет переведены в благотворительный фонд. «Добрый кофе» — это яркий пример того, как<br>благотворительность может легко вписаться в жизнь каждого из нас. Идея осуществлять сбор средств в помощь детям через самое<br>простое — стакан любимого кофе с утра.</p>
+                <h2 class="sale_text_h">Сладкие часы</h2>
+                <p class="sale_text">Каждый день в кофейне «Кофейня» с 20-00 до 23-00 проходит акция «Сладкие часы». Скидки на вафли и круассаны с витрины 15%.<br>Загляните к нам!</p>
+                <h2 class="sale_text_h">Каждый 6-й кофе в подарок</h2>
+                <p class="sale_text">При покупке любого зернового кофе Клиенту предлагается принять участие в акции. В случае согласия выдается кофейная карта, где<br>ставится первый штамп. Если Клиент покупает 5 чашек зернового кофе и собирает 5 штампов, то получает 6-ю чашку зернового кофе в<br>подарок*.<br>Кофейная карта действует во всей сети.</p>
+            </div>
+            <div class="temp"></div>
+            <footer>
+                <p class="footer_h">Контакты</p>
+                <div class="contacts">
+                    <div class="contacts_left">
+                        <div class="contacts_1">
+                            <img src="../static/images/vk.png" alt="" class="con_img">
+                            <p class="con_text">vk.com/coffe_house</p>
+                        </div>
+                        <div class="contacts_1">
+                            <img src="../static/images/telegram.png" alt="" class="con_img">
+                            <p class="con_text">@coffe_house</p>
+                        </div>
+                    </div>
+                    <div class="contacts_right">
+                        <div class="contacts_1">
+                            <img src="../static/images/email.png" alt="" class="con_img">
+                            <p class="con_text">coffe_house@mail.ru</p>
+                        </div>
+                        <div class="contacts_1">
+                            <img src="../static/images/number.png" alt="" class="con_img">
+                            <p class="con_text">8-(846)-12-56-89</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

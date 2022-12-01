@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="ru">
+        <meta charset="utf-8">
+        <title>Кофейня - Меню</title>
+        <link rel="stylesheet" href="../static/menu.css">
+        <style>
+            .top_panel { background-image: url("{{ url_for('static',filename='images/top_panel.png') }}") }
+            @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Playfair+Display&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Playfair+Display:wght@400;500&display=swap');
+        </style>
+    </head>
+    <body>
+        <div class="main_window">
+            <div class="top_panel">
+                <a href="/" class="logo_ref"><img src="../static/images/logo.png" alt="logo" class="logo"></a>
+                <a href="/menu" class="top_panel_button" id="menu">Меню</a>
+                <a href="/sale" class="top_panel_button" id="sale">Акции</a>
+                <a href="/comments" class="top_panel_button" id="comments">Отзывы</a>
+                <a href="/vacancy" class="top_panel_button" id="vacancy">Вакансии</a>
+                <a href="/partners" class="top_panel_button" id="partners">Для партнёров</a>
+            </div>
+            <div class="temp"></div>
+            <div class="menu_h">
+                <h1 class="menu_h_text">Меню</h1>
+                <hr style="border: 2px solid #000000; background-color: #000000; width: 90%;">
+                <p class="menu_choice">
+                    <a href="#cad" class="mc_text">Кофе и напитки&nbsp;&nbsp;</a>
+                    <a href="#backery" class="mc_text">Выпечка&nbsp;&nbsp;</a>
+                    <a href="#snacks" class="mc_text">Закуски&nbsp;&nbsp;</a>
+                    <a href="#desserts" class="mc_text">Десерты</a>
+                </p>
+            </div>
+            <div class="menu_positions" id="cad">
+                <h2 class="cad_h">Кофе и напитки</h2>
+                <table class="cad_table">
+                    <tr>
+                        <td>
+                            <figure class="cad_cell">
+                                <img src="../static/images/cad1.png" alt="Картинка кофе" class="cad_sell_img">
+                                <figcaption class="cad_sell_img_text">Эспрессо</figcaption>
+                                <figure class="cad_cell_price_bg">
+                                    <figcaption class="cad_sell_img_price">100&#8381;</figcaption>
+                                </figure>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure class="cad_cell">
+                                <img src="../static/images/cad2.png" alt="Картинка кофе" class="cad_sell_img">
+                                <figcaption class="cad_sell_img_text">Капуччино</figcaption>
+                                <figure class="cad_cell_price_bg">
+                                    <figcaption class="cad_sell_img_price">150&#8381;</figcaption>
+                                </figure>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure class="cad_cell">
+                                <img src="../static/images/cad3.png" alt="Картинка кофе" class="cad_sell_img">
+                                <figcaption class="cad_sell_img_text">Латте</figcaption>
+                                <figure class="cad_cell_price_bg">
+                                    <figcaption class="cad_sell_img_price">170&#8381;</figcaption>
+                                </figure>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure class="cad_cell">
+                                <img src="../static/images/cad4.png" alt="Картинка кофе" class="cad_sell_img">
+                                <figcaption class="cad_sell_img_text">Черный кофе</figcaption>
+                                <figure class="cad_cell_price_bg">
+                                    <figcaption class="cad_sell_img_price">150&#8381;</figcaption>
+                                </figure>
+                            </figure>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <figure class="cad_cell">
+                                <img src="../static/images/cad5.png" alt="Картинка кофе" class="cad_sell_img">
+                                <figcaption class="cad_sell_img_text">Коктейль</figcaption>
+                                <figure class="cad_cell_price_bg">
+                                    <figcaption class="cad_sell_img_price">180&#8381;</figcaption>
+                                </figure>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure class="cad_cell">
+                                <img src="../static/images/cad6.png" alt="Картинка кофе" class="cad_sell_img">
+                                <figcaption class="cad_sell_img_text">Чай</figcaption>
+                                <figure class="cad_cell_price_bg">
+                                    <figcaption class="cad_sell_img_price">120&#8381;</figcaption>
+                                </figure>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure class="cad_cell">
+                                <img src="../static/images/cad7.png" alt="Картинка кофе" class="cad_sell_img">
+                                <figcaption class="cad_sell_img_text">Смузи</figcaption>
+                                <figure class="cad_cell_price_bg">
+                                    <figcaption class="cad_sell_img_price">230&#8381;</figcaption>
+                                </figure>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure class="cad_cell">
+                                <img src="../static/images/cad8.png" alt="Картинка кофе" class="cad_sell_img">
+                                <figcaption class="cad_sell_img_text">Фраппучино</figcaption>
+                                <figure class="cad_cell_price_bg">
+                                    <figcaption class="cad_sell_img_price">180&#8381;</figcaption>
+                                </figure>
+                            </figure>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <figure class="cad_cell">
+                                <img src="../static/images/cad9.png" alt="Картинка кофе" class="cad_sell_img">
+                                <figcaption class="cad_sell_img_text">Какао</figcaption>
+                                <figure class="cad_cell_price_bg">
+                                    <figcaption class="cad_sell_img_price">140&#8381;</figcaption>
+                                </figure>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure class="cad_cell">
+                                <img src="../static/images/cad10.png" alt="Картинка кофе" class="cad_sell_img">
+                                <figcaption class="cad_sell_img_text">Матча</figcaption>
+                                <figure class="cad_cell_price_bg">
+                                    <figcaption class="cad_sell_img_price">140&#8381;</figcaption>
+                                </figure>
+                            </figure>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="temp"></div>
+            <div class="menu_positions" id="backery">
+                <h2 class="cad_h">Выпечка</h2>
+                <table class="cad_table">
+                    <tr>
+                        <td>
+                            <figure class="cad_cell">
+                                <img src="../static/images/back1.png" alt="Картинка кофе" class="cad_sell_img">
+                                <figcaption class="cad_sell_img_text">Круассан</figcaption>
+                                <figure class="cad_cell_price_bg">
+                                    <figcaption class="cad_sell_img_price">80&#8381;</figcaption>
+                                </figure>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure class="cad_cell">
+                                <img src="../static/images/back2.png" alt="Картинка кофе" class="cad_sell_img">
+                                <figcaption class="cad_sell_img_text">Печенье</figcaption>
+                                <figure class="cad_cell_price_bg">
+                                    <figcaption class="cad_sell_img_price">55&#8381;</figcaption>
+                                </figure>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure class="cad_cell">
+                                <img src="../static/images/back3.png" alt="Картинка кофе" class="cad_sell_img">
+                                <figcaption class="cad_sell_img_text">Цезарь-ролл</figcaption>
+                                <figure class="cad_cell_price_bg">
+                                    <figcaption class="cad_sell_img_price">190&#8381;</figcaption>
+                                </figure>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure class="cad_cell">
+                                <img src="../static/images/back4.png" alt="Картинка кофе" class="cad_sell_img">
+                                <figcaption class="cad_sell_img_text">Яблочный штрудель</figcaption>
+                                <figure class="cad_cell_price_bg">
+                                    <figcaption class="cad_sell_img_price">150&#8381;</figcaption>
+                                </figure>
+                            </figure>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <figure class="cad_cell">
+                                <img src="../static/images/back5.png" alt="Картинка кофе" class="cad_sell_img">
+                                <figcaption class="cad_sell_img_text">Киш с грибами и сыром<br> Чеддер</figcaption>
+                                <figure class="cad_cell_price_bg">
+                                    <figcaption class="cad_sell_img_price">150&#8381;</figcaption>
+                                </figure>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure class="cad_cell">
+                                <img src="../static/images/back6.png" alt="Картинка кофе" class="cad_sell_img">
+                                <figcaption class="cad_sell_img_text">Киш с тыквой и курицей</figcaption>
+                                <figure class="cad_cell_price_bg">
+                                    <figcaption class="cad_sell_img_price">150&#8381;</figcaption>
+                                </figure>
+                            </figure>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="temp"></div>
+            <div class="menu_positions" id="snacks">
+                <h2 class="cad_h">Закуски</h2>
+                <table class="cad_table">
+                    <tr>
+                        <td>
+                            <figure class="cad_cell">
+                                <img src="../static/images/snack1.png" alt="Картинка кофе" class="cad_sell_img">
+                                <figcaption class="cad_sell_img_text">Салат Цезарь</figcaption>
+                                <figure class="cad_cell_price_bg">
+                                    <figcaption class="cad_sell_img_price">140&#8381;</figcaption>
+                                </figure>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure class="cad_cell">
+                                <img src="../static/images/snack2.png" alt="Картинка кофе" class="cad_sell_img">
+                                <figcaption class="cad_sell_img_text">Сэндвич с лососем</figcaption>
+                                <figure class="cad_cell_price_bg">
+                                    <figcaption class="cad_sell_img_price">140&#8381;</figcaption>
+                                </figure>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure class="cad_cell">
+                                <img src="../static/images/snack3.png" alt="Картинка кофе" class="cad_sell_img">
+                                <figcaption class="cad_sell_img_text">Овсяная каша</figcaption>
+                                <figure class="cad_cell_price_bg">
+                                    <figcaption class="cad_sell_img_price">90&#8381;</figcaption>
+                                </figure>
+                            </figure>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="temp"></div>
+            <div class="menu_positions" id="desserts">
+                <h2 class="cad_h">Десерты</h2>
+                <table class="cad_table">
+                    <tr>
+                        <td>
+                            <figure class="cad_cell">
+                                <img src="../static/images/des1.png" alt="Картинка кофе" class="cad_sell_img">
+                                <figcaption class="cad_sell_img_text">Чизкейк</figcaption>
+                                <figure class="cad_cell_price_bg">
+                                    <figcaption class="cad_sell_img_price">250&#8381;</figcaption>
+                                </figure>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure class="cad_cell">
+                                <img src="../static/images/des2.png" alt="Картинка кофе" class="cad_sell_img">
+                                <figcaption class="cad_sell_img_text">Макарун</figcaption>
+                                <figure class="cad_cell_price_bg">
+                                    <figcaption class="cad_sell_img_price">90&#8381;</figcaption>
+                                </figure>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure class="cad_cell">
+                                <img src="../static/images/des3.png" alt="Картинка кофе" class="cad_sell_img">
+                                <figcaption class="cad_sell_img_text">Сырники</figcaption>
+                                <figure class="cad_cell_price_bg">
+                                    <figcaption class="cad_sell_img_price">130&#8381;</figcaption>
+                                </figure>
+                            </figure>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="temp"></div>
+            <footer>
+                <p class="footer_h">Контакты</p>
+                <div class="contacts">
+                    <div class="contacts_left">
+                        <div class="contacts_1">
+                            <img src="../static/images/vk.png" alt="" class="con_img">
+                            <p class="con_text">vk.com/coffe_house</p>
+                        </div>
+                        <div class="contacts_1">
+                            <img src="../static/images/telegram.png" alt="" class="con_img">
+                            <p class="con_text">@coffe_house</p>
+                        </div>
+                    </div>
+                    <div class="contacts_right">
+                        <div class="contacts_1">
+                            <img src="../static/images/email.png" alt="" class="con_img">
+                            <p class="con_text">coffe_house@mail.ru</p>
+                        </div>
+                        <div class="contacts_1">
+                            <img src="../static/images/number.png" alt="" class="con_img">
+                            <p class="con_text">8-(846)-12-56-89</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

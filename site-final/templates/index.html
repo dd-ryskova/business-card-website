@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="ru">
+        <meta charset="utf-8">
+        <title>Кофейня</title>
+        <link rel="stylesheet" href="../static/style.css">
+        <style>
+            .big_picture { background-image: url("{{ url_for('static',filename='images/MainPicture.png') }}") }
+            .map_container { background-image: url("{{ url_for('static',filename='images/map.png') }}") }
+            @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Playfair+Display&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Playfair+Display:wght@400;500&display=swap');
+        </style>
+    </head>
+    <body>
+        <div class="main_window">
+            <div class="top_panel">
+                <a href="/menu" class="top_panel_button" id="menu">Меню</a>
+                <a href="/sale" class="top_panel_button" id="sale">Акции</a>
+                <a href="/comments" class="top_panel_button" id="comments">Отзывы</a>
+                <a href="/vacancy" class="top_panel_button" id="vacancy">Вакансии</a>
+                <a href="/partners" class="top_panel_button" id="partners">Для партнёров</a>
+            </div>
+            <div class="big_picture">
+                <figure class="bp_darker">
+                    <p class="bp_text">Городская кофейня,<br>покорившая ваши сердца</p>
+                </figure>
+            </div>
+            <div class="temp"></div>
+            <div class="about">
+                <div class="about_text_container">
+                    <p class="about_text_h">О нас</p>
+                    <div class="at_cont">
+                        <p class="about_text">Наша "Кофейня" в формате business-food для каждого, кто ценит качественную и свежую продукцию от горячей домашней выпечки до вкусных напитков. </p>
+                        <p class="about_text">Оформление - это приятные глазу цвета, лаконичный дизайн, интерьер идеально совмещает в себе современный городской стиль с тропическими растениями.</p>
+                        <p class="about_text">У нас всегда можно сделать паузу, отдохнуть и перекусить, встретиться с давним другом за чашечкой капуччино, полноценно пообедать, позавтракать или с комфортом поработать.</p>
+                        <p class="about_text">Мы создаем, а не потребляем. Готовимся развивать творческий кластер, объединяя людей. Мы — место, где жизнь. Мы делимся теплом!</p>
+                    </div>
+                </div>
+                <div class="white_rect">
+                    <img src="../static/images/AboutPicture.png" class="white_rect_img">
+                </div>
+            </div>
+            <div class="temp"></div>
+            <div class="new">
+                <div class="bg_new">
+                    <p class="new_text" id="qq">Новинки</p>
+                    <p class="new_text">Какое прекрасное утро для прекрасного завтрака! Мы подготовили для Вас целый сет, который поможет Вам взбодриться, сытно и вкусно позавтракать и просто поднять настроение на весь  день. Заходи в раздел "Меню" и посмотри весь наш новый ассортимент.</p>
+                    <figure class="new_pics">
+                        <img src="../static/images/new_3.png" alt="" class="new_picture" id="np_1">
+                        <img src="../static/images/new_2.png" alt="" class="new_picture" id="np_2">
+                        <img src="../static/images/new_1.png" alt="" class="new_picture" id="np_3">
+                    </figure>
+                    <button class="menu_button"><a href="../static/menu.html" class="mb_text">Меню</a></button>
+                </div>
+            </div>
+            <div class="temp"></div>
+            <div class="galery">
+                <h2 class="g_text">Фотогалерея</h2>
+                <figure class="g_fig">
+                    <img src="../static/images/galery1.png" alt="" class="g_top">
+                    <img src="../static/images/galery2.png" alt="" class="g_top">
+                </figure>
+                <figure class="g_fig">
+                    <img src="../static/images/galery3.png" alt="" class="g_bottom">
+                    <img src="../static/images/galery4.png" alt="" class="g_bottom">
+                    <img src="../static/images/galery5.png" alt="" class="g_bottom">
+                </figure>
+            </div>
+            <div class="temp"></div>
+            <div class="last_news">
+                <div class="ln_pic">
+                    <p class="news_header" id="qq">Последние новости</p>
+                    <figure class="white_rect_news">
+                        <img src="../static/images/lnPic.png" class="ln_white_rect_img">
+                    </figure>
+                </div>
+                <div class="ln_text_container">
+                    <p class="ln_text" id="qq">Кофе, на который можно положиться</p>
+                    <p class="ln_text">Мы только-только открылись, и поэтому устраиваем грандиозный праздник!<br> Всю неделю в нашей кофейне “Кофейня” к каждому чеку -20%, чтобы Вы смогли<br> попробовать как можно больше наших чудесных блюд и проникнуться нашей<br> атмосферой.</p>
+                    <p class="ln_text">Ждём Вас по адресу: ул. Самарская, 34</p>
+                    <p class="ln_text" id="grey_text">23.06.23 - 30.06.23</p>
+                </div>
+            </div>
+            <div class="temp"></div>
+            <div class="coffee">
+                <div class="coffee_left">
+                    <img src="../static/images/coffee1.png" alt="" style="width: 571px; height: 320px; margin-left: auto; margin-right: auto;">
+                    <div class="coffee_text_container" style="margin-right: 0;">
+                        <p class="coffee_text_h" style="text-align: right;">Кофе для хорошего настроения</p>
+                        <p class="coffee_text" style="text-align: right;">«Когда на душе тоскливо, хочется тепла и уюта, загляни в<br> кофейню, возьми чашечку обжигающего кофе, сядь где-<br>нибудь в стороне и прислушайся к голосам окружающих.<br> Поверь, через пять минут ты поймешь, что на самом деле<br> мир не так уж и плох! И все твои беды сразу уйдут в<br> небытие...».</p>
+                    </div>
+                </div>
+                <div style="width: 100px;"></div>
+                <div class="coffee_right">
+                    <div class="coffee_text_container" style="margin-left: 0;">
+                        <p class="coffee_text_h">Магия кофе от “Кофейни”</p>
+                        <p class="coffee_text">Самое главное в кофейнях - это, конечно же, кофе. Кофе<br> надо пить всегда и везде, при всяком удобном случае, он<br> превращает существование в жизнь.<br>Приготовлению мы уделяем много сил и времени, всегда<br> совершенствуемся и ищем что-то новое.</p>
+                    </div>
+                    <img src="../static/images/coffee2.png" alt="" style="width: 571px; height: 320px; margin-left: auto; margin-right: auto;">
+                </div>
+            </div>
+            <div class="temp"></div>
+            <div class="map_container">
+                <p class="map_h">Адрес</p>
+                <figure class="map_wrect">
+                    <p class="map_wrect_text">Ждём тебя по адресу:<br>г. Самара, ул. Самарская, 34</p>
+                    <button class="delivery_btn"><a href="/delivery" class="delivery_ref">Условия доставки</a></button>
+                </figure>
+            </div>
+            <div class="temp"></div>
+            <footer>
+                <p class="footer_h">Контакты</p>
+                <div class="contacts">
+                    <div class="contacts_left">
+                        <div class="contacts_1">
+                            <img src="../static/images/vk.png" alt="" class="con_img">
+                            <p class="con_text">vk.com/coffe_house</p>
+                        </div>
+                        <div class="contacts_1">
+                            <img src="../static/images/telegram.png" alt="" class="con_img">
+                            <p class="con_text">@coffe_house</p>
+                        </div>
+                    </div>
+                    <div class="contacts_right">
+                        <div class="contacts_1">
+                            <img src="../static/images/email.png" alt="" class="con_img">
+                            <p class="con_text">coffe_house@mail.ru</p>
+                        </div>
+                        <div class="contacts_1">
+                            <img src="../static/images/number.png" alt="" class="con_img">
+                            <p class="con_text">8-(846)-12-56-89</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
