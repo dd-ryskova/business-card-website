@@ -270,6 +270,12 @@ html, body {
     border-style: solid
 }
 
+.menu_button:hover, menu_button:focus {
+    color: #82704f;
+    box-shadow: -1px 1px 2px hsla(30, 62%, 62%, 1);
+    background-color: hsla(30, 62%, 80%, 1)
+}
+
 .mb_text {
     margin: 0;
 
@@ -528,6 +534,12 @@ html, body {
 .delivery_btn:active {
     border-style: solid;
     border-color: #876548;
+}
+
+.delivery_btn:hover, delivery_btn:focus {
+    color: #82704f;
+    box-shadow: -1px 1px 2px hsla(30, 62%, 42%, 1);
+    background-color: hsla(30, 62%, 60%, 1)
 }
 
 .delivery_ref {

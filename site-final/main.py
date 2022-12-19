@@ -69,6 +69,10 @@ def partners():
 def delivery():
     return render_template("delivery.html")
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
 
 if __name__ == "__main__":
     app.secret_key = 'superpuperbibaboba'

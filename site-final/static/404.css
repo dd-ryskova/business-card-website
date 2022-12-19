@@ -1,0 +1,56 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #1E1E1E;
+}
+
+.main_window {
+    position: relative;
+    height: 6200px;
+    width: 1920px;
+    left: calc(50% - 1920px/2);
+
+    background-color: white;
+}
+
+.picture {
+    position: relative;
+    top: 0;
+    left: inherit;
+    width: 1920px;
+    height: 1080px;
+
+    background-image: url('/images/MainPicture.png');
+}
+
+.bp_darker {
+    position: inherit;
+    width: inherit;
+    height: inherit;
+    margin: 0;
+    background-color: rgba(1, 1, 1, 0.6);
+}
+
+.bp_text {
+    position: relative;
+    top: 200px;
+    padding: 250px;
+    margin: 0;
+
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.mail {
+    color: #FFFFFF;
+}
+
