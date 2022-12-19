@@ -11,6 +11,27 @@
             @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Playfair+Display&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Playfair+Display:wght@400;500&display=swap');
         </style>
+         <script type="text/javascript">
+        $(function(){
+        $('.minimized').click(function(event) {
+        var i_path = $(this).attr('src');
+        $('body').append('<div id="overlay"></div><div id="magnify"><img src="'+i_path+'"><div id="close-popup"><i></i></div></div>');
+        $('#magnify').css({
+        left: ($(document).width() - $('#magnify').outerWidth())/2,
+        // top: ($(document).height() - $('#magnify').outerHeight())/2 upd: 24.10.2016
+        top: ($(window).height() - $('#magnify').outerHeight())/2
+        });
+        $('#overlay, #magnify').fadeIn('fast');
+        });
+
+        $('body').on('click', '#close-popup, #overlay', function(event) {
+        event.preventDefault();
+        $('#overlay, #magnify').fadeOut('fast', function() {
+        $('#close-popup, #magnify, #overlay').remove();
+        });
+        });
+        });
+        </script>
     </head>
     <body>
         <div class="main_window">
@@ -58,13 +79,13 @@
             <div class="galery">
                 <h2 class="g_text">Фотогалерея</h2>
                 <figure class="g_fig">
-                    <img src="../static/images/galery1.png" alt="" class="g_top">
-                    <img src="../static/images/galery2.png" alt="" class="g_top">
+                    <img src="../static/images/galery1.png" alt="" width="48%" class="minimized" alt="клик для увеличения">
+                    <img src="../static/images/galery2.png" alt="" width="48%" class="minimized" alt="клик для увеличения">
                 </figure>
                 <figure class="g_fig">
-                    <img src="../static/images/galery3.png" alt="" class="g_bottom">
-                    <img src="../static/images/galery4.png" alt="" class="g_bottom">
-                    <img src="../static/images/galery5.png" alt="" class="g_bottom">
+                    <img src="../static/images/galery3.png" alt="" width="31.9%" class="minimized" alt="клик для увеличения">
+                    <img src="../static/images/galery4.png" alt="" width="31.9%" class="minimized" alt="клик для увеличения">
+                    <img src="../static/images/galery5.png" alt="" width="31.9%" class="minimized" alt="клик для увеличения">
                 </figure>
             </div>
             <div class="temp"></div>
